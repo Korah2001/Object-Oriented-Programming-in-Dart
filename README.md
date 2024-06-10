@@ -37,3 +37,28 @@ def main():
 
 if __name__ == "__main__":
     main()
+    git checkout -b feature-update
+    git branch
+    echo "Some new content" > newfile.txt
+    git add newfile.txt
+    git commit -m "Added newfile.txt with some content"
+    git checkout main
+    git merge feature-update
+    git pull
+    git checkout -b resolve-conflict
+    git add newfile.txt
+git commit -m "Resolved conflict in newfile.txt"
+git checkout main
+git merge resolve-conflict
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My GitHub Page</title>
+</head>
+<body>
+    <h1>Hello, GitHub Pages!</h1>
+</body>
+</html>
+git add index.html
+git commit -m "Added index.html for GitHub Pages"
+git push
